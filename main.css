@@ -1,0 +1,348 @@
+html, body {
+  font-family: sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.introduction {
+  position: relative;
+  margin-top: 200px;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+}
+
+.content { 
+  /*position: relative;*/
+  margin-top: 100px;
+}
+
+.center {
+  text-align: center;
+}
+
+#header {
+  /*z-index: 2;*/
+  top: 0;
+  left: 0;
+  position: fixed;
+  opacity: 0.8;
+  width: 100%;
+  /*height: 60px;*/
+  line-height: 60px;
+  /*background: white;*/
+  /*background: rgba(255, 255, 255, 0.95);*/
+  background: white;
+  color: black;
+  }
+#header h1 {
+  top: 0px;
+  margin: 0px;
+  font-size: 20px;
+}
+#nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  top: -15px;
+}
+#nav ul li {
+  float: left;
+  list-style: none;
+}
+#nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 0 10px;
+  color: black;
+}
+#nav ul li a:hover {
+  background: #CCCACA;
+}
+
+h1.headerName {
+  font-size: 10px;
+}
+
+#intro {
+  background: url(images/overlay.png), url(backgroundImages/photoslaptop.jpeg);
+  background-size: 256px 256px, cover;
+  background-attachment: fixed, fixed;
+  background-position: top left, bottom center;
+  background-repeat: repeat, no-repeat;
+  /*opacity: 0.8;*/
+  /*padding-top: 60px;*/
+}
+
+#aboutme {
+  /*background: url(images/overlay.png), url(backgroundImages/lightgreybackgroundpicture2.jpg);*/
+  /*background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;*/
+  /*height: 100%;*/
+  /*background: rgba(192,192,192,0.3);*/
+  /*opacity: 0.2;*/
+}
+
+.meImage {
+  content:url(picImages/blessing3color.jpg);
+  background-size: 100px 100px, cover;
+}
+
+/*#quoteAnderson {
+  background: url(images/overlay.png), url(backgroundImages/lightgreybackgroundpicture2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*height: 100%;*/
+  /*background: rgba(192,192,192,0.3);*/
+  /*opacity: 0.2;*/
+  /*filter: brightness(1.1);*/
+/*}*/
+
+#projects {
+    /*background-color: white;*/
+    /*background: url(images/overlay.png), url(backgroundImages/lightgreybackgroundpicture2.jpg);*/
+  /*background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;*/
+  /*height: 100%;*/
+  /*background: rgba(192,192,192,0.3);*/
+  /*opacity: 0.2;*/
+}
+
+#languages {
+  background: url(images/overlay.png), url(backgroundImages/lovewoodcolor.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+#contact-image {
+  background: url(images/overlay.png), url(backgroundImages/coke-laptop.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+.mainfullscreen {
+  min-height: 100%;
+}
+
+.underlineName {
+    width: 410px;
+    height: 2px;
+    border-radius: 10px;
+    /* background-color: rgba(214, 246, 253, 0.57); */
+    background-color: white;
+    margin: .2em auto .6em;
+    display: block;
+    content: '';
+    margin-top: 7px;
+
+}
+
+.underlineSubTitles {
+  background-color: black;
+  width: 100px;
+  height: 1.5px;
+}
+.underlineWhite {
+    background-color: white;
+}
+
+h2.names{
+  font-size: 120px;
+  /*padding-top: 65px;*/
+  font-weight: 100;
+  text-align: center;
+  /*text-transform: none !important;*/
+  /*position: relative;*/
+/*  font-family: "Source Sans Pro", sans-serif;*/
+}
+
+h2.subTitles {
+  font-size: 40px;
+  color: black;
+  text-transform: uppercase;
+  /*margin-top: -60px;*/
+  /*font-family: Initial;*/
+}
+
+h2.colorW {
+  color: white;
+}
+
+p.whiteText {
+  color: white;
+}
+
+h4.welcome {
+  color: white;
+  font-size: 20px;
+  margin-top: -30px;
+}
+
+.button {
+  text-align: center;
+  padding-top: 160px;
+}
+.button a {
+  display: inline-block;
+  border: 2px solid #777;
+  padding: .75em 1.5em;
+  color: #eee;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: .15em;
+  word-spacing: .25em;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.button a:hover {
+  color: #FFFAF0;
+  background: #777;
+}
+
+
+.aboutMeInfo {
+  height:100%;
+  min-width: 50%;
+  color: black; 
+  position: center;
+  text-align: center;
+  left: 0;
+  background-color:white;
+  font-size: 16px;
+}
+
+li.charac{
+  margin-left: 40%;
+  font-size: 17px;
+  text-align: left; 
+  font-style: normal;
+  font-family: 'Quicksand';
+}
+
+div {
+  width: 100%;
+}
+
+.myAboutInfo {
+  /*left: 90px;*/
+  padding-left: 600px;
+  width: 50%;
+  margin-top: 70px;
+  text-align: left;
+}
+.icon-large {
+  width: 20px !important;
+  height: 20px !important;
+  zoom: 7.0;
+  color: white;
+  padding-right: 7px;
+}
+
+.icon-footer-large {
+  /*width: 10px !important;*/
+  /*height: 10px !important;*/
+  zoom: 1.5;
+  color: white;
+  padding-right: 7px;
+}
+
+.roundedMe {
+  width: 500px;
+  height: 330px;
+  border-radius: 1%;
+  right: 0px;
+  margin-left: 50px;
+  margin-top: -440px;
+}
+
+.rightOfImg {
+  text-align: right;
+  margin-left: -600px;
+  margin-top: -300px;
+}
+
+.indentform {
+  /*margin-left: 370px;*/
+  text-align: center;
+}
+
+.formLook {
+  font-size: 16px;
+  padding: 15px;
+  width: 200px;
+  margin-bottom: 8px;
+}
+
+.formBorder {
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #A7A7A7;
+}
+
+.formMessage {
+  width: 435px;
+  /*margin-left: 205px;*/
+  height: 100px;
+}
+
+.formButton {
+  background-color: black;
+  color: white;
+
+}
+
+.formButton:hover {
+  /*background-color: #CCCACA;*/
+
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+
+
