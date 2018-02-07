@@ -12,13 +12,26 @@
 	<!-- <link rel="stylesheet" href="formValidation.php"> -->
 </head>
 <body>
+	<section class = "header-section">
+		<div class = "flex-container">
+			<a>
+				hello
+			</a>
+			<a>
+				hoooo
+			</a>
+			<a>
+				jooooyyyyyyy
+			</a>
+		</div>
+	</section>
 <!-- The header section -->
-<section id = "header" class = "header-section">
-	<div class = "container">
-	<header id="header">
-      <div class="container">
+<!-- <section id = "header" class = "header-section"> -->
+	<!-- <div class = "container"> -->
+		<!-- <header id = "header"> -->
+			<!-- <div class = "container"> -->
         <!-- <h1 class = "headerName">Blessing O</h1> -->
-        <nav id="nav">
+        <!-- <nav id="nav">
           <ul>
             <li>
               <a href="#intro">Home</a>
@@ -36,11 +49,11 @@
               <a href="#contact-image"><i class = "fa fa-envelope"></i> Contact</a>
             </li>
           </ul>
-        </nav>
-      </div> 
-</header> 
-</div>
-</section>
+        </nav> -->
+    <!-- </div> -->
+        <!-- </header> -->
+<!-- </div> -->
+<!-- </section> -->
 <!-- CLose header section -->
 
 <!-- Introduction section -->
@@ -48,7 +61,7 @@
 	<div class = "container">			
 		<div class = "introduction">
 			<h2 class = "names">Blessing Omotayo <div class = "underlineName"></div></h2>
-				<h4 class = "welcome">Software Developer</h4>
+				<h4 class = "developer">Software Developer</h4>
 					<div class="button">
     					<a href="#aboutme">Learn more about me!</a>
   					</div>
@@ -61,15 +74,15 @@
 	<div class = "container">
 		<div class = "content">
 			<h2 class = "names subTitles">About Me <div class = "underlineName underlineSubTitles"></div></h2>
-			<p class = "center"><em>Introducing myself, I love programming</em></p>
+			<p class = "hello"><em>Introducing myself, I love programming</em></p>
 			<br><br>
 
 			<div id="wrapper">
-        		<section id="left">
+        		<section id="left-img">
         			<img src="picImages/blessingHighDevPic.jpg" alt="photo of Blessing" class = "roundedMe">
         		</section>
-        		<section id="right">
-        			<p>Hello, my name is Blessing Omotayo and I am a third year Software Engineering student enrolled at Carleton University. I am hard working, patient and willing to learn in any way I can. I am an enthusiastic learner that is always looking to learn new languages or libraries that are good, exciting and fun. I seek opportunities that will allow me to use my skills as well as build upon them.
+        		<section id="right-bio">
+        			<p id = "bio">Hello, my name is Blessing Omotayo and I am a third year Software Engineering student enrolled at Carleton University. I am hard working, patient and willing to learn in any way I can. I am an enthusiastic learner that is always looking to learn new languages or libraries that are good, exciting and fun. I seek opportunities that will allow me to use my skills as well as build upon them.
 
 				<br><br><br> 
 				Please feel free to contact me for more details on my projects or to know more about me. My contact information is on my resume :)</p>
@@ -85,24 +98,53 @@
 	<div class = "container">
 			<div class = "content center">
 				<h2 class = "names subTitles colorW">Technical Skills <div class = "underlineName underlineSubTitles underlineWhite"></div></h2>
-				<p class = "whiteText">See resume for more</p>
+				<p class = "lang">See resume for more</p>
 				<div>
-					<a class = "icon-large"><i class = "icon-html5"></i></a>
-					<a class = "icon-large"><i class = "fa fa-css3"></i></a>
-					<a class = "icon-large"><i class = "icon-javascript"></i></a>
-					<a class = "icon-large"><i class = "icon-c"></i></a>
-					<a class = "icon-large"><i class = "icon-java-bold"></i></a>
-					<a class = "icon-large"><i class = "icon-git"></i></a>
+					<a id = "html" class = "icon-large"><i class = "icon-html5"></i></a>
+					<a id = "css" class = "icon-large"><i class = "fa fa-css3"></i></a>
+					<a id = "javaScript" class = "icon-large"><i class = "icon-javascript"></i></a>
+					<a id = "c" class = "icon-large"><i class = "icon-c"></i></a>
+					<a id = "java" class = "icon-large"><i class = "icon-java-bold"></i></a>
+					<a id = "git" class = "icon-large"><i class = "icon-git"></i></a>
 				</div>
 			</div>
 	</div>
 </section>
 
 <!-- Projects section -->
-<section id = "projects" class = "project-section mainfullscreen">
+<section id = "projects" class = "project-section ">
 	<div class = "container">
 		<div class = "content">
 			<h2 class = "names subTitles">My Projects <div class = "underlineName underlineSubTitles"></div></h2>
+			<div class = "proj">
+				<div class="responsive">
+				  <div class="gallery">
+				      <img src="projectPictures/astroidsAdjusted.jpg" alt="Astroid game" width="300" height="200">
+				    <div class="desc">Built an application in Java that allows the user to play the game with lives and the cahnce to jump to a higher level<br><br></div>
+				  </div>
+				</div>
+
+				<div class="responsive">
+				  <div class="gallery">
+				      <img src="projectPictures/washerRing.jpg" alt="Programming comp" width="600" height="400">
+				    <div class="desc">Participated in a programming competition at Carleton University to program an effective way of etecting faulty washers in Java</div>
+				  </div>
+				</div>
+
+				<div class="responsive">
+				  <div class="gallery">
+				      <img src="projectPictures/calcAdjusted.jpg" alt="CGPA Calculator" width="600" height="400">
+				    <div class="desc">Currently working in Java to createan application that outputs a student's CGPA after entering all the information needed</div>
+				  </div>
+				</div>
+
+				<div class="responsive">
+				  <div class="gallery">
+				      <img src="backgroundImages/photoslaptop.jpeg" alt="Website" width="600" height="400">
+				    <div class="desc">Working in HTML, CSS and JavaScript to create my website <br><br></div>
+				  </div>
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -119,7 +161,7 @@
 <!-- contact section -->
 <section id = "contact" class = "contact-section">
 	<div class = "container">
-			<div class = "content indentform">
+			<div class = "content center">
 				<form action="/formValidation.php" method="POST">
 					<input id = "name" type = "text" name = "name" placeholder = "Name" class = "formLook formBorder" value = "">
 					<!-- <?php echo htmlspecialchars($_POST['name']); ?> -->
@@ -128,11 +170,16 @@
 					<!-- <?php echo htmlspecialchars($_POST['email']); ?> -->
 					<!-- <?php echo "<p class='text-danger'>$errEmail</p>";?> -->
 				</form>
-				<textarea id = "message" type = "text" name = "message" placeholder="Message" class = "formLook formBorder formMessage"></textarea>
+				<div>
+					<textarea id = "message" type = "text" name = "message" placeholder="Message" class = "formLook formBorder formMessage"></textarea>
+				</div>
+				<div>
+					<p id = "submitBtnError"></p>
+				</div>
 					<!-- <?php echo htmlspecialchars($_POST['message']);?> -->
 				<!-- <?php echo "<p class='text-danger'>$errMessage</p>";?> -->
 				<div>
- 					<button type="submit" name = "submit" class = "formLook formBorder formButton">
+ 					<button type="submit" name = "submit" class = "formLook formBorder formButton onClick = "">
 					<i class = "fa fa-paper-plane"></i> Send Message</button>	
 					<!-- <input id = "submit" type="submit" name="submit" value = "Send" class = "formLook formBorder formButton">	<i class = "fa fa-paper-plane"></i>		 -->
 				</div>
@@ -145,7 +192,7 @@
 	<div class = "container">
 			<div class = "content center">
 				<ul>
-					<a href="https://ca.linkedin.com/in/blessingtayo" rel="_blank" class="fa fa-linkedin icon-footer-large"></a>
+					<a href="https://ca.linkedin.com/in/blessingtayo" class="fa fa-linkedin icon-footer-large"></a>
 					<a href="https://github.com/blessingomotayo" class="fa fa-github icon-footer-large"></a>
 				</ul>
 			</div>

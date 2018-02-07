@@ -1,37 +1,111 @@
-
   html, body {
   font-family: sans-serif;
+/*  font-family: parisplus-clair, sans-serif;
+  font-style: normal;
+  font-weight: 400;*/
+  /*font-variant: normal;*/
   margin: 0;
   width: 100%;
   height: 100%;
+  font-size: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+                                                /* Common Sections */
+
+.container {
+  display: flex;
+  /*flex-wrap: nowrap;*/
+  /*flex-direction: column-reverse;*/
+  /*position: relative; SHOOOOOOOOKKKK WHHYYYYYYY does this line make it not clickable??*/
+}
+
+.content { 
+  margin-top: 50px;
+}
+
+div {
+  width: 100%;
 }
 
 p {
   display: relative;
   font-size: 1.0rem;
+  color: #606060;
+
+  font-family: parisplus-clair;
+  font-style: normal;
+  font-weight: lighter;
+  letter-spacing: 1px;
 }
 
-.introduction {
-  position: relative;
-  margin-top: 200px;
-  font-family: "Source Sans Pro", sans-serif;
+h2.names{
+  font-size: 120px;
+  /*padding-top: 65px;*/
+  font-weight: 100;
   text-align: center;
+  /*text-transform: none !important;*/
+  /*position: relative;*/
+/*  font-family: "Source Sans Pro", sans-serif;*/
+}
+/*Large Laptop Size*/
+@media only screen and (max-width: 1440px) and (min-width: 1040px) {
+
+  .content {
+    margin-top: 80px;
+  }
+  h2.names {
+    font-size: 140px;
+  }
+  h2.subTitles {
+    font-size: 120px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  h2.names {
+    font-size: 80px;
+  }
+}
+
+h2.subTitles {
+  font-size: 30px;
+  color: black;
+  text-transform: uppercase;
+  /*margin-top: -60px;*/
+  /*font-family: Initial;*/
+}
+
+h2.colorW {
   color: white;
 }
 
-.container {
-  display: flex;
-  position: relative;
+.underlineName {
+  width: 410px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: white;
+  margin: .2em auto .6em;
+  margin-top: 6px;
 }
 
-.content { 
-  /*position: relative;*/
-  margin-top: 80px;
+.underlineSubTitles {
+  background-color: black;
+  width: 100px;
+  height: 1.5px;
 }
 
 .center {
   text-align: center;
 }
+
+.underlineWhite {
+    background-color: white;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+                                                /* Header Section */
 
 #header {
   /*z-index: 2;*/
@@ -52,6 +126,30 @@ p {
   margin: 0px;
   font-size: 20px;
 }
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  position: fixed;
+  background-color: white;
+  opacity: 0.8;
+  float: right !important;
+  left: 0;
+  right: 0;
+}
+
+.flex-container > a {
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 0 10px;
+  line-height: 50px;
+  width: 100px;
+  float: right !important;
+  /*position: relative;*/
+}
+
 #nav {
   position: absolute;
   right: 0;
@@ -72,129 +170,28 @@ p {
   background: #CCCACA;
 }
 
-h1.headerName {
-  font-size: 10px;
+
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+                                                /* Introduction Section */
+
+.introduction {
+  position: relative;
+  margin-top: 150px;
+  /*font-family: "Source Sans Pro", sans-serif;*/
+  text-align: center;
+  color: white;
 }
+
 
 #intro {
-  background: url(images/overlay.png), url(backgroundImages/photoslaptop.jpeg);
-  background-size: 256px 256px, cover;
+  background: url(backgroundImages/photoslaptop.jpeg);
+  background-size: 100% 100%, cover;
   background-attachment: fixed, fixed;
   background-position: top left, bottom center;
-  background-repeat: repeat, no-repeat;
-  /*opacity: 0.8;*/
-  /*padding-top: 60px;*/
-}
-
-#aboutme {
-  /*background: url(images/overlay.png), url(backgroundImages/lightgreybackgroundpicture2.jpg);*/
-  /*background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;*/
-  /*height: 100%;*/
-  /*background: rgba(192,192,192,0.3);*/
-  /*opacity: 0.2;*/
-}
-
-.meImage {
-  content:url(picImages/blessing3color.jpg);
-  background-size: 100px 100px, cover;
-}
-
-/*#quoteAnderson {
-  background: url(images/overlay.png), url(backgroundImages/lightgreybackgroundpicture2.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
-  /*height: 100%;*/
-  /*background: rgba(192,192,192,0.3);*/
-  /*opacity: 0.2;*/
-  /*filter: brightness(1.1);*/
-/*}*/
-
-#projects {
-    /*background-color: white;*/
-    /*background: url(images/overlay.png), url(backgroundImages/lightgreybackgroundpicture2.jpg);*/
-  /*background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;*/
-  /*height: 100%;*/
-  /*background: rgba(192,192,192,0.3);*/
-  /*opacity: 0.2;*/
 }
-
-#languages {
-  background: url(images/overlay.png), url(backgroundImages/lovewoodcolor.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;  
-}
-
-#contact-image {
-  background: url(images/overlay.png), url(backgroundImages/coke-laptop.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;  
-}
-
-.mainfullscreen {
-  min-height: 100%;
-}
-
-.underlineName {
-    width: 410px;
-    height: 2px;
-    border-radius: 10px;
-    /* background-color: rgba(214, 246, 253, 0.57); */
-    background-color: white;
-    margin: .2em auto .6em;
-    display: block;
-    content: '';
-    margin-top: 7px;
-
-}
-
-.underlineSubTitles {
-  background-color: black;
-  width: 100px;
-  height: 1.5px;
-}
-.underlineWhite {
-    background-color: white;
-}
-
-h2.names{
-  font-size: 120px;
-  /*padding-top: 65px;*/
-  font-weight: 100;
-  text-align: center;
-  /*text-transform: none !important;*/
-  /*position: relative;*/
-/*  font-family: "Source Sans Pro", sans-serif;*/
-}
-
-h2.subTitles {
-  font-size: 30px;
-  color: black;
-  text-transform: uppercase;
-  /*margin-top: -60px;*/
-  /*font-family: Initial;*/
-}
-
-h2.colorW {
-  color: white;
-}
-
-p.whiteText {
-  color: white;
-}
-
-h4.welcome {
+h4.developer {
   color: white;
   font-size: 20px;
   margin-top: -30px;
@@ -202,7 +199,7 @@ h4.welcome {
 
 .button {
   text-align: center;
-  padding-top: 160px;
+  padding-top: 175px;
 }
 .button a {
   display: inline-block;
@@ -222,47 +219,61 @@ h4.welcome {
   background: #777;
 }
 
-li.charac{
-  margin-left: 40%;
-  font-size: 17px;
-  text-align: left; 
-  font-style: normal;
-  font-family: 'Quicksand';
+@media only screen and (max-width: 1000px) {
+
+  .introduction {
+    margin-top: 300px;
+  }
+  .button {
+    padding-top: 100px;
+  }
 }
 
-div {
-  width: 100%;
+/*Large Laptop Size*/
+@media only screen and (max-width: 1440px) and (min-width: 1040px) {
+
+  .introduction {
+    margin-top: 280px;
+  }
+  h4.developer {
+    color: white;
+    font-size: 30px;
+    margin-top: -30px;
+  }
+
+  .button {
+    padding-top: 255px;
+  }
+
+  .button a {
+  padding: 1.0em 3.5em;
+  font-size: 18px;
+  }
 }
-.icon-large {
-  width: 20px !important;
-  height: 20px !important;
-  zoom: 7.0;
-  color: white;
-  padding-right: 7px;
+/*-------------------------------------------------------------------------------------------------------------------*/
+                                                /* About me Section */
+
+#aboutme {
 }
 
-.icon-footer-large {
-  /*width: 10px !important;*/
-  /*height: 10px !important;*/
-  zoom: 1.5;
-  color: white;
-  padding-right: 7px;
+.hello {
+  text-align: center;
 }
 
 #wrapper {
-  width: 1300px;
+  width: 1200px;
   height: auto;
     /*display: flex;*/
   position: relative;
 }
-#left {
+#left-img {
   width: 500px;
   height: auto;
   float: left;
   /*margin-top: -20px;*/
   margin-left: 300px;
 }
-#right {
+#right-bio {
   width: 500px;
   height: auto;
   float: left;
@@ -279,16 +290,186 @@ div {
   /*margin-top: -400px;*/
 }
 
-.rightOfImg {
-  text-align: right;
-  margin-left: -600px;
-  margin-top: -300px;
+@media only screen and (max-width: 1000px) {
+
+  #left-img {
+    margin-left: 70px;
+  }
+
+  #right-bio {
+    margin-left: -150px;
+  }
+  .roundedMe {
+    width: 250px;
+    height: 250px;
+  }
 }
 
-.indentform {
-  /*margin-left: 370px;*/
-  text-align: center;
+/*Large Laptop Size*/
+@media only screen and (max-width: 1440px) and (min-width: 1040px) {
+  .hello {
+    font-size: 20px;
+  }
+  #wrapper {
+    width: 100%;
+  }
+  #left-img {
+    margin-left: 120px;
+  }
+
+  #right-bio {
+    margin-left: 50px;
+    width: 580px;
+  }
+  .roundedMe {
+    width: 450px;
+    height: 450px;
+  }
+
+  #bio {
+    font-size: 20px;
+  }
 }
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+                                                /* Languages Section */
+
+#languages {
+  background: url(backgroundImages/lovewoodcolor.jpg);
+  background-size: cover;
+  /*background-attachment: fixed;*/
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+p.lang {
+  color: white;
+}
+
+.icon-large {
+  width: 20px !important;
+  height: 20px !important;
+  zoom: 7.0;
+  color: white;
+  padding-right: 7px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .icon-large {
+    width: 15px !important;
+    height: 15px !important;
+    zoom: 6.0;
+  }
+}
+
+/*Large Laptop Size*/
+@media only screen and (max-width: 1440px) and (min-width: 1040px) {
+    .icon-large {
+      width: 15px !important;
+      height: 15px !important;
+      zoom: 9.0;
+  }
+
+  p.lang {
+    font-size: 25px;
+  }
+}
+
+#html:hover {
+  color: #ff5a00;
+}
+#css:hover {
+  color: #339dff;
+}
+#javaScript:hover {
+  color: #ffc100;
+}
+#c:hover {
+  color: #e1c775;
+}
+#java:hover {
+  color: #dd0e03;
+}
+#git:hover {
+  color: #ff5a00;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+                                                /* Project Section */
+
+#projects {
+}
+
+.responsive {
+  padding: 0 20px 0 20px;
+  float: left;
+  width: 24.99999%;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+
+  -moz-transform: scale(1.1); /*Scale by having the zoom feel*/
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+
+  -moz-transition: all 0.5s; /* transition with ease, make it smooth*/
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+div.gallery > img {
+  width: 100%; /* Makes it fit within the width of the .responsive class */
+  height: auto; /* Need to be auto otherwise the height will be the actual height. it scales it down*/
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* { /* Makes sure all elements have box-sizing*/
+    box-sizing: border-box; /* includes the padding and border in an elements total width and height */
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+/*Large Laptop Size*/
+@media only screen and (max-width: 1440px) and (min-width: 1040px) {
+    .responsive {
+      width: 34.99999%;
+      padding: 30px 20px 0 30px;
+    }
+
+    .proj {
+      margin-left: 190px;
+      /*position: center;*/
+      position: inherit;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+                                                /* Contact-Image Section */
+
+#contact-image {
+  background: url(backgroundImages/coke-laptop.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+                                                /* Contact Section */
 
 .formLook {
   font-size: 16px;
@@ -305,21 +486,54 @@ div {
 }
 
 .formMessage {
-  width: 435px;
-  /*margin-left: 205px;*/
-  height: 100px;
+  width: 405px;
+  height: 200px;
 }
 
 .formButton {
   background-color: black;
   color: white;
-
 }
 
 .formButton:hover {
-  /*background-color: #CCCACA;*/
-
+  background-color: green;
 }
+
+/*Large Laptop Size*/
+@media only screen and (max-width: 1440px) and (min-width: 1040px) {
+    .formLook {
+      width: 300px;
+      padding: 20px;
+      font-size: 20px;
+    }
+    .formMessage {
+      width: 605px;
+    }
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
+                                                /* Footer Section */
+
+.icon-footer-large {
+  /*width: 10px !important;*/
+  /*height: 10px !important;*/
+  zoom: 1.5;
+  color: white;
+  padding-right: 7px;
+}
+
+/*Large Laptop Size*/
+@media only screen and (max-width: 1440px) and (min-width: 1040px) {
+    .icon-footer-large {
+      zoom: 2.5;
+    }
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
+
+/*.mainfullscreen {
+  min-height: 100%;
+}*/
+
+
 
 /* For iphones 6, 7, and 8 */
 @media only screen 
