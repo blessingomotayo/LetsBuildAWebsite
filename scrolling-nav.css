@@ -20,7 +20,7 @@ html {
 }
 
 .intro-section {
-    height: 95%;
+    height: 100%;
     width: 100%;
     /*text-align: center;*/
     /*padding-top: 60px;*/
@@ -43,12 +43,12 @@ html {
 /*Normal Laptop Size*/
 @media only screen and (max-width: 1024px) and (min-width: 770px) {
         .about-section {
-        height: 65%;
+        height: 70%;
     }
 }
 
 /*Large Laptop Size*/
-@media only screen and (max-width: 1440px) and (min-width: 1040px) {
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
 
     .about-section {
         height: 70%;
@@ -69,6 +69,12 @@ html {
         height: 40%;
     }
 }
+/*Large Laptop Size*/
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+    .language-section {
+        height: 40%;
+    }
+}
 
 .project-section {
     height: 70%;
@@ -79,9 +85,9 @@ html {
 }
 
 /*Large Laptop Size*/
-@media only screen and (max-width: 1440px) and (min-width: 1040px) {
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
     .project-section {
-        height: 90%;  /*had me confused why about me sectipn was smaller haha*/
+        height: 60%;  /*had me confused why about me sectipn was smaller haha*/
     }
 }
 
@@ -101,7 +107,7 @@ html {
 }
 
 /*Large Laptop Size*/
-@media only screen and (max-width: 1440px) and (min-width: 1040px) {
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
 
     .contact-image-section {
         height: 20%;

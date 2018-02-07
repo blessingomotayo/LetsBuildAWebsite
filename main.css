@@ -57,16 +57,16 @@ h2.names{
   }
 }
 /*Large Laptop Size*/
-@media only screen and (max-width: 1440px) and (min-width: 1040px) {
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
 
   .content {
-    margin-top: 80px;
+    /*margin-top: 80px;*/
   }
   h2.names {
-    font-size: 140px;
+    font-size: 100px;
   }
   h2.subTitles {
-    font-size: 120px;
+    font-size: 80px;
   }
 }
 
@@ -194,7 +194,7 @@ h2.colorW {
 
 
 #intro {
-  background: url(backgroundImages/photoslaptop.jpeg);
+  background: url(backgroundImages/compCupLamp.jpeg);
   background-size: 100% 100%, cover;
   background-attachment: fixed, fixed;
   background-position: top left, bottom center;
@@ -241,31 +241,35 @@ h4.developer {
 /*Normal Laptop Size*/
 @media only screen and (max-width: 1024px) and (min-width: 770px) {
   .introduction {
-    margin-top: 240px;
+    margin-top: 140px;
+  }
+  .button a {
+    padding: .9em 2.5em;
+    font-size: 13px;
   }
   .button {
-    padding-top: 150px;
+    /*padding-top: 250px;*/
   }
 }
 /*Large Laptop Size*/
-@media only screen and (max-width: 1440px) and (min-width: 1040px) {
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
 
   .introduction {
-    margin-top: 280px;
+    /*margin-top: 280px;*/
   }
   h4.developer {
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: -30px;
   }
 
   .button {
-    padding-top: 255px;
+    /*padding-top: 240px;*/
   }
 
   .button a {
-  padding: 1.0em 3.5em;
-  font-size: 18px;
+  padding: .9em 2.5em;
+  font-size: 13px;
   }
 }
 /*-------------------------------------------------------------------------------------------------------------------*/
@@ -278,21 +282,24 @@ h4.developer {
   text-align: center;
 }
 
-#wrapper {
-  width: 1200px;
-  height: auto;
+/*#wrapper {*/
+  /*width: 1200px;*/
+  /*width: 100%;*/
+  /*height: auto;*/
     /*display: flex;*/
-  position: relative;
-}
+  /*position: relative;*/
+/*}*/
 #left-img {
-  width: 500px;
+  /*width: 500px;*/
+  width: 50%;
   height: auto;
   float: left;
   /*margin-top: -20px;*/
-  margin-left: 300px;
+  /*margin-left: 300px;*/
 }
 #right-bio {
-  width: 500px;
+  /*width: 500px;*/
+  width: 50%;
   height: auto;
   float: left;
   margin-top: 40px;
@@ -300,8 +307,8 @@ h4.developer {
 }
 
 .roundedMe {
-  width: 350px;
-  height: 350px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   right: 0px;
   /*margin-left: 100px;*/
@@ -341,18 +348,22 @@ h4.developer {
 /*Normal Laptop Size*/
 @media only screen and (max-width: 1024px) and (min-width: 770px) {
   .hello {
-    font-size: 20px;
+    font-size: 16px;
   }
-  #wrapper {
+/*  #wrapper {
     width: 100%;
-  }
+    margin-left: 10%;
+    margin-right: 10%;
+  }*/
   #left-img {
-    margin-left: 100px;
+    margin-left: 90px;
+    width: 50%;
   }
 
   #right-bio {
     margin-left: -150px;
-    width: 480px;
+    /*width: 480px;*/
+    width: 50%;
     margin-top: -5px;
   }
   .roundedMe {
@@ -361,33 +372,36 @@ h4.developer {
   }
 
   #bio {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 /*Large Laptop Size*/
-@media only screen and (max-width: 1440px) and (min-width: 1040px) {
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
   .hello {
-    font-size: 20px;
+    font-size: 18px;
   }
-  #wrapper {
+/*  #wrapper {
     width: 100%;
-  }
+  }*/
   #left-img {
-    margin-left: 120px;
+    margin-left: 90px;
+    width: 50%;
   }
 
   #right-bio {
-    margin-left: 50px;
-    width: 580px;
+    margin-left: -170px;
+    /*width: 580px;*/
+    width: 50%;
+    margin-top: -10px;
   }
   .roundedMe {
-    width: 450px;
-    height: 450px;
+    width: 250px;
+    height: 250px;
   }
 
   #bio {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 
@@ -442,18 +456,18 @@ p.lang {
 /*Normal Laptop Size*/
 @media only screen and (max-width: 1024px) and (min-width: 770px) {
     .icon-large {
-      zoom: 6.0;
+      zoom: 5.0;
   }
 }
 
 /*Large Laptop Size*/
-@media only screen and (max-width: 1440px) and (min-width: 1040px) {
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
     .icon-large {
-      zoom: 9.0;
+      zoom: 6.0;
   }
 
   p.lang {
-    font-size: 25px;
+    font-size: 18px;
   }
 }
 
@@ -525,17 +539,17 @@ div.desc {
 }*/
 
 /*Large Laptop Size*/
-@media only screen and (max-width: 1440px) and (min-width: 1040px) {
-    .responsive {
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+/*    .responsive {
       width: 34.99999%;
       padding: 30px 20px 0 30px;
     }
 
     .proj {
-      margin-left: 190px;
+      margin-left: 190px;*/
       /*position: center;*/
-      position: inherit;
-    }
+/*      position: inherit;
+    }*/
 
 /*    div.desc {
       font-size: 15px;
@@ -595,15 +609,15 @@ div.desc {
 }
 
 /*Large Laptop Size*/
-@media only screen and (max-width: 1440px) and (min-width: 1040px) {
-    .formLook {
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+/*    .formLook {
       width: 300px;
       padding: 20px;
       font-size: 20px;
     }
     .formMessage {
       width: 605px;
-    }
+    }*/
 }
 /*-------------------------------------------------------------------------------------------------------------------*/
                                                 /* Footer Section */
@@ -617,10 +631,10 @@ div.desc {
 }
 
 /*Large Laptop Size*/
-@media only screen and (max-width: 1440px) and (min-width: 1040px) {
-    .icon-footer-large {
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+/*    .icon-footer-large {
       zoom: 2.5;
-    }
+    }*/
 }
 /*-------------------------------------------------------------------------------------------------------------------*/
 
