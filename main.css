@@ -69,6 +69,14 @@ h2.names{
   }
 }
 
+/*Normal Laptop Size*/
+@media only screen and (max-width: 1024px) and (min-width: 770px) {
+
+  h2.names {
+    font-size: 100px;
+  }
+}
+
 h2.subTitles {
   font-size: 30px;
   color: black;
@@ -250,6 +258,16 @@ h4.developer {
   font-size: 18px;
   }
 }
+
+/*Normal Laptop Size*/
+@media only screen and (max-width: 1024px) and (min-width: 770px) {
+  .introduction {
+    margin-top: 240px;
+  }
+  .button {
+    padding-top: 150px;
+  }
+}
 /*-------------------------------------------------------------------------------------------------------------------*/
                                                 /* About me Section */
 
@@ -302,6 +320,33 @@ h4.developer {
   .roundedMe {
     width: 250px;
     height: 250px;
+  }
+}
+
+/*Normal Laptop Size*/
+@media only screen and (max-width: 1024px) and (min-width: 770px) {
+  .hello {
+    font-size: 20px;
+  }
+  #wrapper {
+    width: 100%;
+  }
+  #left-img {
+    margin-left: 100px;
+  }
+
+  #right-bio {
+    margin-left: -150px;
+    width: 480px;
+    margin-top: -5px;
+  }
+  .roundedMe {
+    width: 250px;
+    height: 250px;
+  }
+
+  #bio {
+    font-size: 16px;
   }
 }
 
@@ -366,13 +411,18 @@ p.lang {
 /*Large Laptop Size*/
 @media only screen and (max-width: 1440px) and (min-width: 1040px) {
     .icon-large {
-      width: 15px !important;
-      height: 15px !important;
       zoom: 9.0;
   }
 
   p.lang {
     font-size: 25px;
+  }
+}
+
+/*Normal Laptop Size*/
+@media only screen and (max-width: 1024px) and (min-width: 770px) {
+    .icon-large {
+      zoom: 6.0;
   }
 }
 
@@ -455,6 +505,10 @@ div.desc {
       /*position: center;*/
       position: inherit;
     }
+
+/*    div.desc {
+      font-size: 15px;
+    }*/
 }
 
 /*-------------------------------------------------------------------------------------------------------------------*/
@@ -508,6 +562,17 @@ div.desc {
     }
     .formMessage {
       width: 605px;
+    }
+}
+
+/*Normal Laptop Size*/
+@media only screen and (max-width: 1024px) and (min-width: 770px) {
+    .formLook {
+      width: 220px;
+    }
+    .formMessage {
+      height: 140px;
+      width: 445px;
     }
 }
 /*-------------------------------------------------------------------------------------------------------------------*/

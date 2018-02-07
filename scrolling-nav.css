@@ -40,11 +40,33 @@ html {
         /*height: 50%;  had me confused why about me section was smaller haha*/
     }
 }
+/*Normal Laptop Size*/
+@media only screen and (max-width: 1024px) and (min-width: 770px) {
+        .about-section {
+        height: 65%;
+    }
+}
+
 /*Large Laptop Size*/
 @media only screen and (max-width: 1440px) and (min-width: 1040px) {
 
     .about-section {
         height: 70%;
+    }
+}
+
+.language-section {
+    height: 45%;
+    width: 100%;
+    /*padding-top: 70px;*/
+    /*text-align: center;*/
+    background: #fff;
+}
+
+/*Normal Laptop Size*/
+@media only screen and (max-width: 1024px) and (min-width: 770px) {
+    .language-section {
+        height: 40%;
     }
 }
 
@@ -63,12 +85,11 @@ html {
     }
 }
 
-.language-section {
-    height: 45%;
-    width: 100%;
-    /*padding-top: 70px;*/
-    /*text-align: center;*/
-    background: #fff;
+/*Normal Laptop Size*/
+@media only screen and (max-width: 1024px) and (min-width: 770px) {
+    .project-section {
+        height: 60%;
+    }
 }
 
 .contact-image-section {
@@ -78,6 +99,21 @@ html {
     /*text-align: center;*/
     /*background: black;*/
 }
+
+/*Large Laptop Size*/
+@media only screen and (max-width: 1440px) and (min-width: 1040px) {
+
+    .contact-image-section {
+        height: 20%;
+    }
+}
+
+/*Normal Laptop Size*/
+@media only screen and (max-width: 1024px) and (min-width: 770px) {
+    .contact-image-section {
+        height: 20%;
+    }
+}
 .contact-section {
     height: 60%;
     width: 100%;
@@ -85,6 +121,7 @@ html {
     /*text-align: center;*/
     background: #fff;
 }
+
 .footer-section {
     height: 15%;
     width: 100%;
