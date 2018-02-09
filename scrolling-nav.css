@@ -16,7 +16,7 @@ html {
     /*text-align: center;*/
     /*padding-top: 60px;*/
     background: #eee;
-    border: solid;
+    /*border: solid;*/
 }
 
 .intro-section {
@@ -87,7 +87,7 @@ html {
 /*Large Laptop Size*/
 @media only screen and (max-width: 1440px) and (min-width: 1025px) {
     .project-section {
-        height: 60%;  /*had me confused why about me sectipn was smaller haha*/
+        height: 70%;  /*had me confused why about me sectipn was smaller haha*/
     }
 }
 

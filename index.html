@@ -12,26 +12,10 @@
 	<!-- <link rel="stylesheet" href="formValidation.php"> -->
 </head>
 <body>
-<!-- 	<section class = "header-section">
-		<div class = "flex-container">
-			<a>
-				hello
-			</a>
-			<a>
-				hoooo
-			</a>
-			<a>
-				jooooyyyyyyy
-			</a>
-		</div>
-	</section> -->
-<!-- The header section -->
-<!-- <section id = "header" class = "header-section"> -->
-	<!-- <div class = "container"> -->
-		<!-- <header id = "header"> -->
-			<!-- <div class = "container"> -->
-        <!-- <h1 class = "headerName">Blessing O</h1> -->
-        <!-- <nav id="nav">
+<section id = "header" class = "header-section">
+	<div class = "container">
+		<header id = "header">
+        <nav id="nav">
           <ul>
             <li>
               <a href="#intro">Home</a>
@@ -49,11 +33,10 @@
               <a href="#contact-image"><i class = "fa fa-envelope"></i> Contact</a>
             </li>
           </ul>
-        </nav> -->
-    <!-- </div> -->
-        <!-- </header> -->
-<!-- </div> -->
-<!-- </section> -->
+        </nav>
+        </header>
+	</div>
+</section>
 <!-- CLose header section -->
 
 <!-- Introduction section -->
@@ -84,11 +67,13 @@
         		<div id="right-bio">
         			<p id = "bio">Hello, my name is Blessing Omotayo and I am a third year Software Engineering student enrolled at Carleton University. I am hard working, patient and willing to learn in any way I can. I am an enthusiastic learner that is always looking to learn new languages or libraries that are good, exciting and fun. I seek opportunities that will allow me to use my skills as well as build upon them.
 
-				<br><br><br> 
-				Please feel free to contact me for more details on my projects or to know more about me. My contact information is on my resume :)</p>
-			</div>
-    </div>
-			
+					<br><br><br> 
+					Please feel free to contact me for more details on my projects or to know more about me. My contact information is on my resume :)</p>
+					<div class = "button btn-resume btn-small">
+						<a href = "resume/Blessing_Omotayo_Resume.pdf" target = "_blank">Resume</a>
+					</div>
+				</div>
+    		</div>	
 	</div>
 	</div>
 </section>
@@ -120,28 +105,28 @@
 				<div class="responsive">
 				  <div class="gallery">
 				      <img src="projectPictures/astroidsAdjusted.jpg" alt="Astroid game" width="300" height="200">
-				    <div class="desc">Built an application in Java that allows the user to play the game with lives and the cahnce to jump to a higher level<br><br></div>
+				    <div class="desc">Built an application in Java that allows the user to play the game with lives and the chance to jump to a higher level<br><br></div>
 				  </div>
 				</div>
 
 				<div class="responsive">
 				  <div class="gallery">
 				      <img src="projectPictures/washerRing.jpg" alt="Programming comp" width="600" height="400">
-				    <div class="desc">Participated in a programming competition at Carleton University to program an effective way of etecting faulty washers in Java</div>
+				    <div class="desc">Participated in a programming competition at Carleton University to program an effective way of detecting faulty washers in Java</div>
 				  </div>
 				</div>
 
 				<div class="responsive">
 				  <div class="gallery">
 				      <img src="projectPictures/calcAdjusted.jpg" alt="CGPA Calculator" width="600" height="400">
-				    <div class="desc">Currently working in Java to createan application that outputs a student's CGPA after entering all the information needed</div>
+				    <div class="desc">Currently working in Java to create an application that outputs a student's CGPA after entering all the information needed</div>
 				  </div>
 				</div>
 
 				<div class="responsive">
 				  <div class="gallery">
 				      <img src="backgroundImages/photoslaptop.jpeg" alt="Website" width="600" height="400">
-				    <div class="desc">Working in HTML, CSS and JavaScript to create my website <br><br></div>
+				    <div class="desc">Working in HTML, CSS and JavaScript to create my website <br><br><br></div>
 				  </div>
 				</div>
 			</div>
@@ -164,11 +149,7 @@
 			<div class = "content center">
 				<form action="/formValidation.php" method="POST">
 					<input id = "name" type = "text" name = "name" placeholder = "Name" class = "formLook formBorder" value = "">
-					<!-- <?php echo htmlspecialchars($_POST['name']); ?> -->
-					<!-- <?php echo "<p>$errName</p>"; ?> -->
 					<input id = "email" type = "text" name = "email" placeholder = "Email" class = "formLook formBorder" value="">
-					<!-- <?php echo htmlspecialchars($_POST['email']); ?> -->
-					<!-- <?php echo "<p class='text-danger'>$errEmail</p>";?> -->
 				</form>
 				<div>
 					<textarea id = "message" type = "text" name = "message" placeholder="Message" class = "formLook formBorder formMessage"></textarea>
@@ -176,12 +157,9 @@
 				<div>
 					<p id = "submitBtnError"></p>
 				</div>
-					<!-- <?php echo htmlspecialchars($_POST['message']);?> -->
-				<!-- <?php echo "<p class='text-danger'>$errMessage</p>";?> -->
 				<div>
  					<button type="submit" name = "submit" class = "formLook formBorder formButton onClick = "">
-					<i class = "fa fa-paper-plane"></i> Send Message</button>	
-					<!-- <input id = "submit" type="submit" name="submit" value = "Send" class = "formLook formBorder formButton">	<i class = "fa fa-paper-plane"></i>		 -->
+					<i class = "fa fa-paper-plane"></i> Send Message</button>
 				</div>
 			</div>
 	</div>

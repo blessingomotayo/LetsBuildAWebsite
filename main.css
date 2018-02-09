@@ -1,9 +1,6 @@
   html, body {
   font-family: sans-serif;
-/*  font-family: parisplus-clair, sans-serif;
-  font-style: normal;
-  font-weight: 400;*/
-  /*font-variant: normal;*/
+/*  font-family: parisplus-clair, sans-serif;*/
   margin: 0;
   width: 100%;
   height: 100%;
@@ -13,15 +10,17 @@
 /*--------------------------------------------------------------------------------------------------------------------*/
                                                 /* Common Sections */
 
+* { /* Makes sure all elements have box-sizing*/
+    box-sizing: border-box; /* includes the padding and border in an elements total width and height */
+}
+
 .container {
-  display: flex;
-  /*flex-wrap: nowrap;*/
-  /*flex-direction: column-reverse;*/
-  /*position: relative; SHOOOOOOOOKKKK WHHYYYYYYY does this line make it not clickable??*/
+  position: relative;
 }
 
 .content { 
-  margin-top: 50px;
+  padding-top: 50px;
+  display: absolute;
 }
 
 div {
@@ -44,8 +43,6 @@ h2.names{
   /*padding-top: 65px;*/
   font-weight: 100;
   text-align: center;
-  /*text-transform: none !important;*/
-  /*position: relative;*/
 /*  font-family: "Source Sans Pro", sans-serif;*/
 }
 
@@ -82,8 +79,6 @@ h2.subTitles {
   font-size: 30px;
   color: black;
   text-transform: uppercase;
-  /*margin-top: -60px;*/
-  /*font-family: Initial;*/
 }
 
 h2.colorW {
@@ -117,16 +112,14 @@ h2.colorW {
                                                 /* Header Section */
 
 #header {
-  /*z-index: 2;*/
+  z-index: 1;
   top: 0;
   left: 0;
   position: fixed;
   opacity: 0.8;
   width: 100%;
-  /*height: 60px;*/
+  height: 60px;
   line-height: 60px;
-  /*background: white;*/
-  /*background: rgba(255, 255, 255, 0.95);*/
   background: white;
   color: black;
   }
@@ -134,29 +127,6 @@ h2.colorW {
   top: 0px;
   margin: 0px;
   font-size: 20px;
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  position: fixed;
-  background-color: white;
-  opacity: 0.8;
-  float: right !important;
-  left: 0;
-  right: 0;
-}
-
-.flex-container > a {
-  color: black;
-  text-align: center;
-  font-size: 18px;
-  text-decoration: none;
-  padding: 0 10px;
-  line-height: 50px;
-  width: 100px;
-  float: right !important;
-  /*position: relative;*/
 }
 
 #nav {
@@ -178,15 +148,12 @@ h2.colorW {
 #nav ul li a:hover {
   background: #CCCACA;
 }
-
-
-
 /*--------------------------------------------------------------------------------------------------------------------*/
                                                 /* Introduction Section */
 
 .introduction {
   position: relative;
-  margin-top: 150px;
+  padding-top: 150px;
   /*font-family: "Source Sans Pro", sans-serif;*/
   text-align: center;
   color: white;
@@ -195,9 +162,8 @@ h2.colorW {
 
 #intro {
   background: url(backgroundImages/compCupLamp.jpeg);
-  background-size: 100% 100%, cover;
-  background-attachment: fixed, fixed;
-  background-position: top left, bottom center;
+  background-size: cover; /* setting to 100% will make the background look like a blob when resizing*/
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 h4.developer {
@@ -208,10 +174,10 @@ h4.developer {
 
 .button {
   text-align: center;
-  padding-top: 175px;
+  padding-top: 220px;
 }
 .button a {
-  display: inline-block;
+  /*display: inline-block;*/
   border: 2px solid #777;
   padding: .75em 1.5em;
   color: #eee;
@@ -241,7 +207,7 @@ h4.developer {
 /*Normal Laptop Size*/
 @media only screen and (max-width: 1024px) and (min-width: 770px) {
   .introduction {
-    margin-top: 140px;
+    padding-top: 140px;
   }
   .button a {
     padding: .9em 2.5em;
@@ -255,7 +221,7 @@ h4.developer {
 @media only screen and (max-width: 1440px) and (min-width: 1025px) {
 
   .introduction {
-    /*margin-top: 280px;*/
+    /*padding-top: 280px;*/
   }
   h4.developer {
     color: white;
@@ -282,23 +248,15 @@ h4.developer {
   text-align: center;
 }
 
-/*#wrapper {*/
-  /*width: 1200px;*/
-  /*width: 100%;*/
-  /*height: auto;*/
-    /*display: flex;*/
-  /*position: relative;*/
-/*}*/
+#wrapper {
+}
+
 #left-img {
-  /*width: 500px;*/
   width: 50%;
   height: auto;
   float: left;
-  /*margin-top: -20px;*/
-  /*margin-left: 300px;*/
 }
 #right-bio {
-  /*width: 500px;*/
   width: 50%;
   height: auto;
   float: left;
@@ -311,8 +269,16 @@ h4.developer {
   height: 200px;
   border-radius: 50%;
   right: 0px;
-  /*margin-left: 100px;*/
-  /*margin-top: -400px;*/
+}
+
+.btn-resume {
+  padding-top: 10px;
+  text-align: left;
+}
+
+.btn-small a {
+  padding: .65em 1.9em;
+  font-size: 12px;
 }
 
 /*Large Mobile Size*/
@@ -350,11 +316,6 @@ h4.developer {
   .hello {
     font-size: 16px;
   }
-/*  #wrapper {
-    width: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
-  }*/
   #left-img {
     margin-left: 90px;
     width: 50%;
@@ -362,7 +323,6 @@ h4.developer {
 
   #right-bio {
     margin-left: -150px;
-    /*width: 480px;*/
     width: 50%;
     margin-top: -5px;
   }
@@ -381,9 +341,6 @@ h4.developer {
   .hello {
     font-size: 18px;
   }
-/*  #wrapper {
-    width: 100%;
-  }*/
   #left-img {
     margin-left: 90px;
     width: 50%;
@@ -391,7 +348,6 @@ h4.developer {
 
   #right-bio {
     margin-left: -170px;
-    /*width: 580px;*/
     width: 50%;
     margin-top: -10px;
   }
@@ -409,7 +365,7 @@ h4.developer {
                                                 /* Languages Section */
 
 #languages {
-  background: url(backgroundImages/lovewoodcolor.jpg);
+  background: url(backgroundImages/lapPhonePen.jpeg);
   background-size: cover;
   /*background-attachment: fixed;*/
   background-position: center;
@@ -528,10 +484,6 @@ div.desc {
     text-align: center;
 }
 
-* { /* Makes sure all elements have box-sizing*/
-    box-sizing: border-box; /* includes the padding and border in an elements total width and height */
-}
-
 /*@media only screen and (max-width: 500px){
     .responsive {
         width: 100%;
@@ -623,8 +575,6 @@ div.desc {
                                                 /* Footer Section */
 
 .icon-footer-large {
-  /*width: 10px !important;*/
-  /*height: 10px !important;*/
   zoom: 1.5;
   color: white;
   padding-right: 7px;
